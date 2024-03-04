@@ -153,3 +153,18 @@ section #nutrition #nutrition-list {
   flex-direction: column;
   gap: 12px;
 }
+
+@media screen and (max-width: 376px) {
+  main {
+    padding: 0;
+  }
+  article {
+    padding: 40px 32px;
+  }
+  .heading-lg {
+    font-size: 32px;
+  }
+  section #prep {
+    padding: 24px;
+  }
+}
