@@ -1,0 +1,155 @@
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Color Variables */
+:root {
+  --dark-charcoal: #312e2c;
+  --dark-raspberry: #7a284e;
+  --brandy-red: #854632;
+  --wenge-brown: #5f564d;
+  --eggshell: #f3e5d7;
+  --white-coffee: #e3ddd7;
+  --snow: #fff7fb;
+  --white: #ffffff;
+}
+/* Utility Classes */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+.heading-lg {
+  font-size: 40px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+.heading-md {
+  font-size: 28px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+.heading-sm {
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+.body-reg {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+}
+.body-bold {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+}
+.brandy-red {
+  color: var(--brandy-red);
+}
+.wenge-brown {
+  color: var(--wenge-brown);
+}
+.fat-bottom-border {
+  border-bottom: 1px solid var(--white-coffee);
+  padding-bottom: 32px;
+}
+.flex-col-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.flex-col-24 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.list-item {
+  display: flex;
+  gap: 16px;
+  padding-left: 8px;
+}
+.nutrition-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.chubby-bottom-border {
+  border-bottom: 1px solid var(--white-coffee);
+  padding-bottom: 16px;
+}
+/* Page Element Styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--eggshell);
+  padding: 140px 0;
+}
+article {
+  width: 100%;
+  max-width: 736px;
+  border-radius: 24px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+}
+figure img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 12px;
+  object-fit: fill;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+section #title h1 {
+  color: var(--dark-charcoal);
+}
+section #prep {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px;
+  border-radius: 12px;
+  background-color: var(--snow);
+}
+section #prep h3 {
+  color: var(--dark-raspberry);
+}
+
+section #prep #prep-list .list-item::before {
+  content: "•";
+  color: var(--dark-raspberry);
+  font-size: 24px;
+  padding-right: 16px;
+}
+
+section #ingredients #ingredients-list .list-item::before {
+  content: "•";
+  color: var(--brandy-red);
+  font-size: 24px;
+  padding-right: 8px;
+}
+section #nutrition #nutrition-list {
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
